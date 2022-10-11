@@ -38,7 +38,7 @@ export default function Contact({}: Props) {
         Contact me
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-2xl md:text-4xl font-semibold text-center">
           Currently open to new opportunities,{" "}
           <span className="underline decoration-[#7289da]/50">Let's Talk.</span>
         </h4>
@@ -51,9 +51,9 @@ export default function Contact({}: Props) {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-[300px] md:w-fit mx-auto px-[12px]"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2">
             <input
               name="user_name"
               placeholder="Name"
