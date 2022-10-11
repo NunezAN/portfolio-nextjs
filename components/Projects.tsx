@@ -30,14 +30,18 @@ export default function Projects({}: Props) {
             >
               <motion.img
                 initial={{ y: -300 }}
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 0.8 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 className="w-[800px]"
                 src="https://e-portfolio-02.vercel.app/assets/internshipCover.png"
                 alt=""
               />
-              <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+              <motion.div
+                initial={{ y: 300 }}
+                transition={{ duration: 0.8 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="space-y-10 px-0 md:px-10 max-w-6xl"
+              >
                 <h4 className="text-4xl font-semibold text-center">
                   Internship
                 </h4>
@@ -49,7 +53,7 @@ export default function Projects({}: Props) {
                   necessitatibus. Perferendis eligendi ullam ipsa, est animi
                   laborum fuga illo vel!
                 </p>
-              </div>
+              </motion.div>
             </div>
             <a
               href={`#slide${index != 4 ? index + 1 : 0}`}

@@ -43,9 +43,9 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+        <a href="#contact" className="uppercase hidden md:inline-flex text-sm text-gray-400">
           Let's have a chat
-        </p>
+        </a>
       </motion.div>
     </header>
   );
